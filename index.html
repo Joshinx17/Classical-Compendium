@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A curated journey through classical music — from beginner-friendly pieces to deep, complex masterworks." />
+  <meta name="theme-color" content="#1b1916" />
+  <title>The Classical Compendium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="landing-page">
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar-overlay" id="sidebarOverlay" hidden>
+    <nav class="composer-sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-logo">The Classical Compendium</span>
+        <button class="sidebar-close" id="btnCloseSidebar" aria-label="Close sidebar">✕</button>
+      </div>
+      <ul class="sidebar-list">
+        <!-- Injected via JS -->
+      </ul>
+      <div class="sidebar-footer">
+        <a href="#" class="sidebar-home-link active">← Back to Home</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner">
+      <button class="hamburger-btn" id="btnOpenSidebar" aria-label="Open sidebar">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="logo" aria-label="Home">THE CLASSICAL COMPENDIUM.</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing-hero">
+      <div class="landing-hero-content">
+        <p class="hero-overline">A Beginner's Guide to Classical Music</p>
+        <h1 class="landing-title">The Classical<br /><em>Compendium</em></h1>
+        <p class="landing-subtitle">Embark on a curated journey through the masterworks of the greatest composers in history. Explore the definitive listening paths tailored for every level of listener.</p>
+      </div>
+    </section>
+
+    <section class="landing-grid-section">
+      <div class="landing-grid-header">
+        <h2 class="section-heading">Select a <em>Composer</em></h2>
+      </div>
+      <div class="composer-grid" id="composerGrid">
+        <!-- Injected by landing.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo">THE CLASSICAL COMPENDIUM.</span>
+        <p>A curated listening guide to classical music. All recordings are public domain, sourced from Wikimedia Commons.</p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-copy">&copy; 2024 The Classical Compendium.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="composers.js"></script>
+  <script src="landing.js"></script>
+</body>
+</html>
